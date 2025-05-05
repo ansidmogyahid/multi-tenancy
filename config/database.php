@@ -122,7 +122,7 @@ return [
     
         'landlord' => [
             'driver' => 'mysql',
-            'database' => 'landlord',
+            'database' => env('DB_DATABASE', 'landlord'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'root'),
